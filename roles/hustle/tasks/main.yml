@@ -1,7 +1,12 @@
 ---
 # These task installs and enables docker on Server
 - name: ensure Docker is installed
-  yum: name=docker state=present
+  yum: 
+    name: docker
+    state: present
 
 - name: ensure docker is running
-  service: name=docker state=running enabled=yes
+  service: 
+    name: docker 
+    state: running 
+    enabled: yes
