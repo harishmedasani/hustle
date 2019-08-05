@@ -8,5 +8,5 @@
 - name: ensure docker is running
   service: 
     name: docker 
-    state: running 
+    state: started
     enabled: yes
